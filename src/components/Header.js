@@ -1,10 +1,16 @@
 import React from "react";
 import { StyledHeader } from "./styles/Header.styled";
+import { Container } from "./styles/Container.styled";
 
 export default function Header() {
   return (
     <StyledHeader>
-      <h1>Hubble Header</h1>
+      <Container>
+        <Nav>
+          <Logo src="/images/logo.svg" alt="" />
+          <Button>Try it free</Button>
+        </Nav>
+      </Container>
     </StyledHeader>
   );
 }
